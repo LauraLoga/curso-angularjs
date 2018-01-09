@@ -24,7 +24,8 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: [
                     'ng-annotate-loader',
-                    'babel-loader'
+                    'babel-loader',
+                    'eslint-loader'
                 ]
             },
             {
