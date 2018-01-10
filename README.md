@@ -23,4 +23,5 @@ $ npm start
 - [Guía de estilo JS](https://github.com/airbnb/javascript) — Airbnb
 - [Webpack](https://webpack.github.io/)
 - [Babel](https://babeljs.io/)
+- [Blog Todd Motto](https://toddmotto.com/)
 
