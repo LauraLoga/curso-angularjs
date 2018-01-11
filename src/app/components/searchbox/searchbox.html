@@ -1,6 +1,7 @@
 <section class="searchbox">
-  <form>
-    <input type="text" placeholder="Escribe tu búsqueda">
+  <form ng-submit="$ctrl.onSubmit()">
+    <input type="text" ng-focus="$ctrl.onFocus()" ng-model="$ctrl.busqueda" placeholder="Escribe tu búsqueda">
     <input type="submit" value="Buscar">
   </form>
+  <p ng-if="$ctrl.whenFocus">Escribe tu búsqueda</p>
 </section>
