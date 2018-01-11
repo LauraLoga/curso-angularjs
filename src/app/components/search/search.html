@@ -1,4 +1,5 @@
 <section class="search">
+  <button type="button" ng-click="$ctrl.goToWelcome()">Ir a welcome</button>
   <searchbox params="$ctrl.params" on-search="$ctrl.handleSearch($event)"></searchbox>
   <section class="hnlist">
     <section class="hn" ng-repeat="news in $ctrl.hackerNews track by news.objectID">

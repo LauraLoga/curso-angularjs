@@ -3,7 +3,8 @@ import template from './search.html';
 const SearchComponent = {
   template,
   controller: class SearchController {
-    constructor(SearchService) {
+    constructor($state, SearchService) {
+      this.$state = $state;
       this.SearchService = SearchService;
     }
 
@@ -14,6 +15,10 @@ const SearchComponent = {
         buttonText: 'Buscar',
         value: '',
       };
+    }
+
+    goToWelcome() {
+      this.$state.go('app', { name: 'rodrigo' });
     }
 
     handleSearch(event) {
