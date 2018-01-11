@@ -1,12 +1,13 @@
 import angular from 'angular';
 
+import SearchModule from './search/search.module';
 import SearchboxModule from './searchbox/searchbox.module';
 
 const ComponentsModule = angular
   .module('app.components', [
     SearchboxModule,
+    SearchModule,
   ])
-  .run($log => $log.debug('Se inicia Components'))
   .name;
 
 export default ComponentsModule;

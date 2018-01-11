@@ -1,0 +1,11 @@
+<section class="search">
+  <searchbox params="$ctrl.params" on-search="$ctrl.handleSearch($event)"></searchbox>
+  <section class="hnlist">
+    <section class="hn" ng-repeat="news in $ctrl.hackerNews track by news.objectID">
+      <span>Autor: {{news.author}}</span>
+      <span>Points: {{news.points}}</span>
+      <span>Fecha: {{news.created_at | date:'dd/MM/yyyy'}}</span>
+      <a ng-href="{{news.url}}">Enlace de la noticia</a>
+    </section>
+  </section>
+</section>
